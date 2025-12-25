@@ -9,11 +9,14 @@ import { r2Storage } from '@payloadcms/storage-r2'
 
 import { Users } from './collections/Users'
 import { Media } from './collections/Media'
+import { collections as generatedCollections } from './collections/index.generated'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
 
-const isCLI = process.argv.some((value) => value.match(/^(generate|migrate):?/))
+const isCLI =
+  process.argv.some((value) => value.match(/^(generate|migrate):?/)) ||
+  process.env.USE_WRANGLER === 'true'
 const isProduction = process.env.NODE_ENV === 'production'
 
 const cloudflare =
@@ -28,7 +31,7 @@ export default buildConfig({
       baseDir: path.resolve(dirname),
     },
   },
-  collections: [Users, Media],
+  collections: [Users, Media, ...generatedCollections],
   editor: lexicalEditor(),
   secret: process.env.PAYLOAD_SECRET || '',
   typescript: {

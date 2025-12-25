@@ -1,0 +1,5856 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "articles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "title_en": {
+            "type": "string"
+          },
+          "title_ko": {
+            "type": "string"
+          },
+          "title_cn": {
+            "type": "string"
+          },
+          "title_tw": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "url_en": {
+            "type": "string"
+          },
+          "url_ko": {
+            "type": "string"
+          },
+          "url_cn": {
+            "type": "string"
+          },
+          "url_tw": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "type",
+          "date",
+          "slug",
+          "title",
+          "title_en",
+          "title_ko",
+          "title_cn",
+          "title_tw",
+          "url",
+          "url_en",
+          "url_ko",
+          "url_cn",
+          "url_tw"
+        ]
+      }
+    },
+    "pages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "is_disabled": {
+            "type": "boolean"
+          },
+          "path": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "title_en": {
+            "type": "string"
+          },
+          "title_ko": {
+            "type": "string"
+          },
+          "title_cn": {
+            "type": "string"
+          },
+          "title_tw": {
+            "type": "string"
+          },
+          "description": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "ogp_image_url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "ogp_image_url_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "ogp_image_url_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "ogp_image_url_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "ogp_image_url_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "is_disabled",
+          "path",
+          "title",
+          "title_en",
+          "title_ko",
+          "title_cn",
+          "title_tw",
+          "description",
+          "description_en",
+          "description_ko",
+          "description_cn",
+          "description_tw",
+          "ogp_image_url",
+          "ogp_image_url_en",
+          "ogp_image_url_ko",
+          "ogp_image_url_cn",
+          "ogp_image_url_tw"
+        ]
+      }
+    },
+    "products": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "string"
+          },
+          "is_disabled": {
+            "type": "boolean"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "area": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "image_url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "flutter_map_position_top": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "flutter_map_position_left": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "map_coords_mobile": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "map_coords": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "category",
+          "is_disabled",
+          "slug",
+          "area",
+          "image_url",
+          "flutter_map_position_top",
+          "flutter_map_position_left",
+          "map_coords_mobile",
+          "map_coords"
+        ]
+      }
+    },
+    "attractions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "slug": {
+            "type": "string"
+          },
+          "is_disabled": {
+            "type": "boolean"
+          },
+          "name": {
+            "type": "string"
+          },
+          "name_kana": {
+            "type": "string"
+          },
+          "category": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "area": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "type": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "premium_pass": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "photo_service": {
+            "type": "boolean"
+          },
+          "is_limit_disabled": {
+            "type": "boolean"
+          },
+          "limit_title": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "limit_text_field": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "limit_age_min": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "limit_passenger_age_min": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "limit_weight_min": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "limit_weight_max": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "limit_height_min": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "accompanied_age": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "parental_consent": {
+            "type": "boolean"
+          },
+          "driving_license": {
+            "type": "boolean"
+          },
+          "restricted_users": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "restricted_users_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "restricted_users_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "restricted_users_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "restricted_users_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "notes": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "notes_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "notes_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "notes_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "notes_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "ticket_premium_pass": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "ticket_same_day": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "disclaimer": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "image_url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "image_url_small": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "image_url_2": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "image_url_3": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "image_url_4": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "image_url_5": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "image_url_6": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "ogp_image_url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "tagline": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "tagline_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "tagline_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "tagline_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "tagline_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "limit_old_age": {
+            "type": "boolean"
+          },
+          "callout": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "callout_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "callout_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "callout_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "callout_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "youtube_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "slug",
+          "is_disabled",
+          "name",
+          "name_kana",
+          "category",
+          "area",
+          "type",
+          "premium_pass",
+          "photo_service",
+          "is_limit_disabled",
+          "limit_title",
+          "limit_text_field",
+          "limit_age_min",
+          "limit_passenger_age_min",
+          "limit_weight_min",
+          "limit_weight_max",
+          "limit_height_min",
+          "accompanied_age",
+          "parental_consent",
+          "driving_license",
+          "restricted_users",
+          "restricted_users_en",
+          "restricted_users_ko",
+          "restricted_users_cn",
+          "restricted_users_tw",
+          "notes",
+          "notes_en",
+          "notes_ko",
+          "notes_cn",
+          "notes_tw",
+          "ticket_premium_pass",
+          "ticket_same_day",
+          "disclaimer",
+          "image_url",
+          "image_url_small",
+          "image_url_2",
+          "image_url_3",
+          "image_url_4",
+          "image_url_5",
+          "image_url_6",
+          "ogp_image_url",
+          "tagline",
+          "tagline_en",
+          "tagline_ko",
+          "tagline_cn",
+          "tagline_tw",
+          "description",
+          "description_en",
+          "description_ko",
+          "description_cn",
+          "description_tw",
+          "limit_old_age",
+          "callout",
+          "callout_en",
+          "callout_ko",
+          "callout_cn",
+          "callout_tw",
+          "youtube_id"
+        ]
+      }
+    },
+    "attraction_categories": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "description": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "category",
+          "description"
+        ]
+      }
+    },
+    "temporary_closures": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "attraction": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          },
+          "text_en": {
+            "type": "string"
+          },
+          "text_ko": {
+            "type": "string"
+          },
+          "text_cn": {
+            "type": "string"
+          },
+          "text_tw": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "attraction",
+          "text",
+          "text_en",
+          "text_ko",
+          "text_cn",
+          "text_tw"
+        ]
+      }
+    },
+    "experiences": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "slug": {
+            "type": "string"
+          },
+          "is_disabled": {
+            "type": "boolean"
+          },
+          "name": {
+            "type": "string"
+          },
+          "name_kana": {
+            "type": "string"
+          },
+          "area": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "tagline": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "tagline_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "tagline_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "tagline_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "tagline_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "image_url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "image_url_small": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "ogp_image_url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "slug",
+          "is_disabled",
+          "name",
+          "name_kana",
+          "area",
+          "tagline",
+          "tagline_en",
+          "tagline_ko",
+          "tagline_cn",
+          "tagline_tw",
+          "description",
+          "description_en",
+          "description_ko",
+          "description_cn",
+          "description_tw",
+          "image_url",
+          "image_url_small",
+          "ogp_image_url"
+        ]
+      }
+    },
+    "restaurants": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "slug": {
+            "type": "string"
+          },
+          "is_disabled": {
+            "type": "boolean"
+          },
+          "area": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "name_kana": {
+            "type": "string"
+          },
+          "tagline": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "tagline_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "tagline_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "tagline_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "tagline_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "reservation_url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "reservation_url_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "reservation_url_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "reservation_url_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "reservation_url_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "business_start_time": {
+            "type": "string"
+          },
+          "business_end_time": {
+            "type": "string"
+          },
+          "image_url": {
+            "type": "string"
+          },
+          "image_url_small": {
+            "type": "string"
+          },
+          "image_url_main": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "slug",
+          "is_disabled",
+          "area",
+          "name",
+          "name_kana",
+          "tagline",
+          "tagline_en",
+          "tagline_ko",
+          "tagline_cn",
+          "tagline_tw",
+          "description",
+          "description_en",
+          "description_ko",
+          "description_cn",
+          "description_tw",
+          "reservation_url",
+          "reservation_url_en",
+          "reservation_url_ko",
+          "reservation_url_cn",
+          "reservation_url_tw",
+          "business_start_time",
+          "business_end_time",
+          "image_url",
+          "image_url_small",
+          "image_url_main"
+        ]
+      }
+    },
+    "food_menus": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "is_disabled": {
+            "type": "boolean"
+          },
+          "is_new": {
+            "type": "boolean"
+          },
+          "name": {
+            "type": "string"
+          },
+          "name_en": {
+            "type": "string"
+          },
+          "name_ko": {
+            "type": "string"
+          },
+          "name_cn": {
+            "type": "string"
+          },
+          "name_tw": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "restaurant_slug": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "description": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "details_title": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "details_title_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "details_title_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "details_title_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "details_title_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "details_body": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "details_body_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "details_body_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "details_body_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "details_body_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "notes": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "notes_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "notes_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "notes_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "notes_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "price_ex_tax": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "price_in_tax": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "main_image_url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "image_url_1": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "image_url_2": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "image_url_3": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "image_url_4": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "image_url_5": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "image_url_6": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "is_disabled",
+          "is_new",
+          "name",
+          "name_en",
+          "name_ko",
+          "name_cn",
+          "name_tw",
+          "slug",
+          "restaurant_slug",
+          "category",
+          "description",
+          "description_en",
+          "description_ko",
+          "description_cn",
+          "description_tw",
+          "details_title",
+          "details_title_en",
+          "details_title_ko",
+          "details_title_cn",
+          "details_title_tw",
+          "details_body",
+          "details_body_en",
+          "details_body_ko",
+          "details_body_cn",
+          "details_body_tw",
+          "notes",
+          "notes_en",
+          "notes_ko",
+          "notes_cn",
+          "notes_tw",
+          "price_ex_tax",
+          "price_in_tax",
+          "main_image_url",
+          "image_url_1",
+          "image_url_2",
+          "image_url_3",
+          "image_url_4",
+          "image_url_5",
+          "image_url_6"
+        ]
+      }
+    },
+    "spa": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "slug": {
+            "type": "string"
+          },
+          "is_disabled": {
+            "type": "boolean"
+          },
+          "area": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "name": {
+            "type": "string"
+          },
+          "name_kana": {
+            "type": "string"
+          },
+          "tagline": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "tagline_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "tagline_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "tagline_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "tagline_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "image_url": {
+            "type": "string"
+          },
+          "image_url_small": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "slug",
+          "is_disabled",
+          "area",
+          "name",
+          "name_kana",
+          "tagline",
+          "tagline_en",
+          "tagline_ko",
+          "tagline_cn",
+          "tagline_tw",
+          "description",
+          "description_en",
+          "description_ko",
+          "description_cn",
+          "description_tw",
+          "image_url",
+          "image_url_small"
+        ]
+      }
+    },
+    "crowdedness": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "mens_bath": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "womens_bath": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "mens_bath",
+          "womens_bath"
+        ]
+      }
+    },
+    "calendar": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id_disabled": {
+            "type": "boolean"
+          },
+          "date": {
+            "type": "string"
+          },
+          "park_start_time": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "park_end_time": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "spa_start_time": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "spa_end_time": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "restaurant_closes_at": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "is_restaurant_notes": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "id_disabled",
+          "date",
+          "park_start_time",
+          "park_end_time",
+          "spa_start_time",
+          "spa_end_time",
+          "restaurant_closes_at",
+          "is_restaurant_notes"
+        ]
+      }
+    },
+    "night_show_calendar": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "is_disabled": {
+            "type": "boolean"
+          },
+          "date": {
+            "type": "string"
+          },
+          "junglia_hanabi_start_time": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "junglia_hanabi_custom": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "junglia_night_fes_start_time": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "junglia_night_fes_custom": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "is_disabled",
+          "date",
+          "junglia_hanabi_start_time",
+          "junglia_hanabi_custom",
+          "junglia_night_fes_start_time",
+          "junglia_night_fes_custom"
+        ]
+      }
+    },
+    "day_show_calendar": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "is_disabled": {
+            "type": "boolean"
+          },
+          "date": {
+            "type": "string"
+          },
+          "junglia_splash_fes_start_time": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "junglia_splash_fes_custom": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "is_disabled",
+          "date",
+          "junglia_splash_fes_start_time",
+          "junglia_splash_fes_custom"
+        ]
+      }
+    },
+    "calendar_restaurant": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "is_disabled": {
+            "type": "boolean"
+          },
+          "date": {
+            "type": "string"
+          },
+          "panorama_dining_opens_at": {
+            "type": "string"
+          },
+          "panorama_dining_closes_at": {
+            "type": "string"
+          },
+          "panorama_dining_custom": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "wild_banquet_opens_at": {
+            "type": "string"
+          },
+          "wild_banquet_closes_at": {
+            "type": "string"
+          },
+          "wild_banquet_custom": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "sunset_beer_terrace_opens_at": {
+            "type": "string"
+          },
+          "sunset_beer_terrace_closes_at": {
+            "type": "string"
+          },
+          "sunset_beer_terrace_custom": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "tropical_oasis_opens_at": {
+            "type": "string"
+          },
+          "tropical_oasis_closes_at": {
+            "type": "string"
+          },
+          "tropical_oasis_custom": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "is_disabled",
+          "date",
+          "panorama_dining_opens_at",
+          "panorama_dining_closes_at",
+          "panorama_dining_custom",
+          "wild_banquet_opens_at",
+          "wild_banquet_closes_at",
+          "wild_banquet_custom",
+          "sunset_beer_terrace_opens_at",
+          "sunset_beer_terrace_closes_at",
+          "sunset_beer_terrace_custom",
+          "tropical_oasis_opens_at",
+          "tropical_oasis_closes_at",
+          "tropical_oasis_custom"
+        ]
+      }
+    },
+    "goods": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "is_disabled": {
+            "type": "boolean"
+          },
+          "is_new": {
+            "type": "boolean"
+          },
+          "name": {
+            "type": "string"
+          },
+          "name_en": {
+            "type": "string"
+          },
+          "name_ko": {
+            "type": "string"
+          },
+          "name_cn": {
+            "type": "string"
+          },
+          "name_tw": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "shop": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "attractions": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "type": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "type_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "type_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "type_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "type_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "release_date": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "release_date_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "release_date_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "release_date_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "release_date_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "price_ex_tax": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "price_in_tax": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "main_image_url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "image_url_1": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "image_url_2": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "image_url_3": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "image_url_4": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "image_url_5": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "image_url_6": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "is_disabled",
+          "is_new",
+          "name",
+          "name_en",
+          "name_ko",
+          "name_cn",
+          "name_tw",
+          "slug",
+          "category",
+          "shop",
+          "attractions",
+          "description",
+          "description_en",
+          "description_ko",
+          "description_cn",
+          "description_tw",
+          "type",
+          "type_en",
+          "type_ko",
+          "type_cn",
+          "type_tw",
+          "release_date",
+          "release_date_en",
+          "release_date_ko",
+          "release_date_cn",
+          "release_date_tw",
+          "price_ex_tax",
+          "price_in_tax",
+          "main_image_url",
+          "image_url_1",
+          "image_url_2",
+          "image_url_3",
+          "image_url_4",
+          "image_url_5",
+          "image_url_6"
+        ]
+      }
+    },
+    "goods_categories": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "category"
+        ]
+      }
+    },
+    "shops": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name_kana": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "is_disabled": {
+            "type": "boolean"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "area": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "tagline": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "tagline_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "tagline_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "tagline_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "tagline_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "image_url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "name_kana",
+          "name",
+          "is_disabled",
+          "slug",
+          "area",
+          "tagline",
+          "tagline_en",
+          "tagline_ko",
+          "tagline_cn",
+          "tagline_tw",
+          "description",
+          "description_en",
+          "description_ko",
+          "description_cn",
+          "description_tw",
+          "image_url"
+        ]
+      }
+    },
+    "areas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "slug"
+        ]
+      }
+    },
+    "partners": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "name_en": {
+            "type": "string"
+          },
+          "name_ko": {
+            "type": "string"
+          },
+          "name_cn": {
+            "type": "string"
+          },
+          "name_tw": {
+            "type": "string"
+          },
+          "description": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "image_url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "is_disabled": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "name",
+          "name_en",
+          "name_ko",
+          "name_cn",
+          "name_tw",
+          "description",
+          "description_en",
+          "description_ko",
+          "description_cn",
+          "description_tw",
+          "url",
+          "image_url",
+          "is_disabled"
+        ]
+      }
+    },
+    "hotels": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "name_en": {
+            "type": "string"
+          },
+          "name_ko": {
+            "type": "string"
+          },
+          "name_cn": {
+            "type": "string"
+          },
+          "name_tw": {
+            "type": "string"
+          },
+          "description": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "description_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "url": {
+            "type": "string"
+          },
+          "url_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "url_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "url_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "url_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "image_url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "name",
+          "name_en",
+          "name_ko",
+          "name_cn",
+          "name_tw",
+          "description",
+          "description_en",
+          "description_ko",
+          "description_cn",
+          "description_tw",
+          "url",
+          "url_en",
+          "url_ko",
+          "url_cn",
+          "url_tw",
+          "image_url"
+        ]
+      }
+    },
+    "translations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "is_disabled": {
+            "type": "boolean"
+          },
+          "path": {
+            "type": "string"
+          },
+          "key": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "ja": {
+            "type": "string"
+          },
+          "en": {
+            "type": "string"
+          },
+          "ko": {
+            "type": "string"
+          },
+          "cn": {
+            "type": "string"
+          },
+          "tw": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "is_disabled",
+          "path",
+          "key",
+          "ja",
+          "en",
+          "ko",
+          "cn",
+          "tw"
+        ]
+      }
+    },
+    "park_service_guide": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "is_disabled": {
+            "type": "boolean"
+          },
+          "category": {
+            "type": "string"
+          },
+          "category_id": {
+            "type": "string"
+          },
+          "title": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "title_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "title_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "title_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "title_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "title_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "subtitle": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "subtitle_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "subtitle_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "subtitle_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "subtitle_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "body": {
+            "type": "string"
+          },
+          "body_en": {
+            "type": "string"
+          },
+          "body_ko": {
+            "type": "string"
+          },
+          "body_cn": {
+            "type": "string"
+          },
+          "body_tw": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "is_disabled",
+          "category",
+          "category_id",
+          "title",
+          "title_en",
+          "title_ko",
+          "title_cn",
+          "title_tw",
+          "title_id",
+          "subtitle",
+          "subtitle_en",
+          "subtitle_ko",
+          "subtitle_cn",
+          "subtitle_tw",
+          "body",
+          "body_en",
+          "body_ko",
+          "body_cn",
+          "body_tw"
+        ]
+      }
+    },
+    "spa_service_guide": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "is_disabled": {
+            "type": "boolean"
+          },
+          "category": {
+            "type": "string"
+          },
+          "category_id": {
+            "type": "string"
+          },
+          "title": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "title_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "title_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "title_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "title_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "title_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "subtitle": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "subtitle_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "subtitle_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "subtitle_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "subtitle_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "body": {
+            "type": "string"
+          },
+          "body_en": {
+            "type": "string"
+          },
+          "body_ko": {
+            "type": "string"
+          },
+          "body_cn": {
+            "type": "string"
+          },
+          "body_tw": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "is_disabled",
+          "category",
+          "category_id",
+          "title",
+          "title_en",
+          "title_ko",
+          "title_cn",
+          "title_tw",
+          "title_id",
+          "subtitle",
+          "subtitle_en",
+          "subtitle_ko",
+          "subtitle_cn",
+          "subtitle_tw",
+          "body",
+          "body_en",
+          "body_ko",
+          "body_cn",
+          "body_tw"
+        ]
+      }
+    },
+    "topics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "is_disabled": {
+            "type": "boolean"
+          },
+          "title": {
+            "type": "string"
+          },
+          "title_en": {
+            "type": "string"
+          },
+          "title_ko": {
+            "type": "string"
+          },
+          "title_cn": {
+            "type": "string"
+          },
+          "title_tw": {
+            "type": "string"
+          },
+          "note": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "note_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "note_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "note_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "note_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "url_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "url_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "url_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "url_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "image_url": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "image_url_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "image_url_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "image_url_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "image_url_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "is_disabled",
+          "title",
+          "title_en",
+          "title_ko",
+          "title_cn",
+          "title_tw",
+          "note",
+          "note_en",
+          "note_ko",
+          "note_cn",
+          "note_tw",
+          "url",
+          "url_en",
+          "url_ko",
+          "url_cn",
+          "url_tw",
+          "image_url",
+          "image_url_en",
+          "image_url_ko",
+          "image_url_cn",
+          "image_url_tw"
+        ]
+      }
+    },
+    "important_news": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "title_en": {
+            "type": "string"
+          },
+          "title_ko": {
+            "type": "string"
+          },
+          "title_cn": {
+            "type": "string"
+          },
+          "title_tw": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "url_en": {
+            "type": "string"
+          },
+          "url_ko": {
+            "type": "string"
+          },
+          "url_cn": {
+            "type": "string"
+          },
+          "url_tw": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "title",
+          "title_en",
+          "title_ko",
+          "title_cn",
+          "title_tw",
+          "url",
+          "url_en",
+          "url_ko",
+          "url_cn",
+          "url_tw"
+        ]
+      }
+    },
+    "ota_banners": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "is_disabled": {
+            "type": "boolean"
+          },
+          "language": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "image_url": {
+            "type": "string"
+          },
+          "image_alt": {
+            "type": "string"
+          },
+          "event": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "is_disabled",
+          "language",
+          "url",
+          "image_url",
+          "image_alt",
+          "event"
+        ]
+      }
+    },
+    "access_ota_banners": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "is_disabled": {
+            "type": "boolean"
+          },
+          "language": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          },
+          "image_url": {
+            "type": "string"
+          },
+          "image_alt": {
+            "type": "string"
+          },
+          "event": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "is_disabled",
+          "language",
+          "url",
+          "image_url",
+          "image_alt",
+          "event"
+        ]
+      }
+    },
+    "ticket_notes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "is_disabled_ticket": {
+            "type": "boolean"
+          },
+          "is_disabled_spa": {
+            "type": "boolean"
+          },
+          "is_disabled_resident": {
+            "type": "boolean"
+          },
+          "text": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "is_disabled_ticket",
+          "is_disabled_spa",
+          "is_disabled_resident",
+          "text",
+          "text_en",
+          "text_ko",
+          "text_cn",
+          "text_tw"
+        ]
+      }
+    },
+    "premium_pass_notes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "is_disabled": {
+            "type": "boolean"
+          },
+          "text": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "is_disabled",
+          "text",
+          "text_en",
+          "text_ko",
+          "text_cn",
+          "text_tw"
+        ]
+      }
+    },
+    "ticket_notes_1day": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "is_disabled": {
+            "type": "boolean"
+          },
+          "type": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "type_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "is_disabled",
+          "type",
+          "type_name",
+          "text",
+          "text_en",
+          "text_ko",
+          "text_cn",
+          "text_tw"
+        ]
+      }
+    },
+    "ticket_notes_afternoon": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "is_disabled": {
+            "type": "boolean"
+          },
+          "type": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "type_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "is_disabled",
+          "type",
+          "type_name",
+          "text",
+          "text_en",
+          "text_ko",
+          "text_cn",
+          "text_tw"
+        ]
+      }
+    },
+    "ticket_notes_afternoon_set": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "is_disabled": {
+            "type": "boolean"
+          },
+          "type": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "type_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "is_disabled",
+          "type",
+          "type_name",
+          "text",
+          "text_en",
+          "text_ko",
+          "text_cn",
+          "text_tw"
+        ]
+      }
+    },
+    "ticket_notes_afternoon_plus": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "is_disabled": {
+            "type": "boolean"
+          },
+          "type": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "type_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "is_disabled",
+          "type",
+          "type_name",
+          "text",
+          "text_en",
+          "text_ko",
+          "text_cn",
+          "text_tw"
+        ]
+      }
+    },
+    "ticket_notes_spa": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "is_disabled": {
+            "type": "boolean"
+          },
+          "type": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "type_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "is_disabled",
+          "type",
+          "type_name",
+          "text",
+          "text_en",
+          "text_ko",
+          "text_cn",
+          "text_tw"
+        ]
+      }
+    },
+    "ticket_notes_premium_pass": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "is_disabled": {
+            "type": "boolean"
+          },
+          "type": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "type_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "is_disabled",
+          "type",
+          "type_name",
+          "text",
+          "text_en",
+          "text_ko",
+          "text_cn",
+          "text_tw"
+        ]
+      }
+    },
+    "ticket_notes_park_spa_1day": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "is_disabled": {
+            "type": "boolean"
+          },
+          "type": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "type_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "is_disabled",
+          "type",
+          "type_name",
+          "text",
+          "text_en",
+          "text_ko",
+          "text_cn",
+          "text_tw"
+        ]
+      }
+    },
+    "ticket_notes_okinawa_resident": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "is_disabled": {
+            "type": "boolean"
+          },
+          "type": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "type_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "is_disabled",
+          "type",
+          "type_name",
+          "text",
+          "text_en",
+          "text_ko",
+          "text_cn",
+          "text_tw"
+        ]
+      }
+    },
+    "ticket_notes_okinawa_kids_free": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "is_disabled": {
+            "type": "boolean"
+          },
+          "type": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "type_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "is_disabled",
+          "type",
+          "type_name",
+          "text",
+          "text_en",
+          "text_ko",
+          "text_cn",
+          "text_tw"
+        ]
+      }
+    },
+    "ticket_notes_spa_guide": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "is_disabled": {
+            "type": "boolean"
+          },
+          "type": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "type_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "is_disabled",
+          "type",
+          "type_name",
+          "text",
+          "text_en",
+          "text_ko",
+          "text_cn",
+          "text_tw"
+        ]
+      }
+    },
+    "comfort_navi_photo_list": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "is_disabled": {
+            "type": "boolean"
+          },
+          "url": {
+            "type": "string"
+          },
+          "image_url": {
+            "type": "string"
+          },
+          "image_alt": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "is_disabled",
+          "url",
+          "image_url",
+          "image_alt"
+        ]
+      }
+    },
+    "tickets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "is_disabled": {
+            "type": "boolean"
+          },
+          "id": {
+            "type": "string"
+          },
+          "price_ex_tax": {
+            "type": "string"
+          },
+          "price_ex_tax_en": {
+            "type": "string"
+          },
+          "price_ex_tax_ko": {
+            "type": "string"
+          },
+          "price_ex_tax_cn": {
+            "type": "string"
+          },
+          "price_ex_tax_tw": {
+            "type": "string"
+          },
+          "price_inc_tax": {
+            "type": "string"
+          },
+          "price_inc_tax_en": {
+            "type": "string"
+          },
+          "price_inc_tax_ko": {
+            "type": "string"
+          },
+          "price_inc_tax_cn": {
+            "type": "string"
+          },
+          "price_inc_tax_tw": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "is_disabled",
+          "id",
+          "price_ex_tax",
+          "price_ex_tax_en",
+          "price_ex_tax_ko",
+          "price_ex_tax_cn",
+          "price_ex_tax_tw",
+          "price_inc_tax",
+          "price_inc_tax_en",
+          "price_inc_tax_ko",
+          "price_inc_tax_cn",
+          "price_inc_tax_tw",
+          "name"
+        ]
+      }
+    },
+    "premium_pass": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "price_ex_tax": {
+            "type": "number"
+          },
+          "price_inc_tax": {
+            "type": "number"
+          }
+        },
+        "required": [
+          "id",
+          "price_ex_tax",
+          "price_inc_tax"
+        ]
+      }
+    },
+    "premium_pass_list": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "attractions": {
+            "type": "string"
+          },
+          "price": {
+            "type": "string"
+          },
+          "image_url": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "attractions",
+          "price",
+          "image_url"
+        ]
+      }
+    },
+    "jtb_banner": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "is_disabled": {
+            "type": "boolean"
+          },
+          "text": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "is_disabled",
+          "text",
+          "url"
+        ]
+      }
+    },
+    "parking_status": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "is_disabled": {
+            "type": "boolean"
+          },
+          "id_disabled": {
+            "type": "boolean"
+          },
+          "name": {
+            "type": "string"
+          },
+          "name_en": {
+            "type": "string"
+          },
+          "name_ko": {
+            "type": "string"
+          },
+          "name_cn": {
+            "type": "string"
+          },
+          "name_tw": {
+            "type": "string"
+          },
+          "name_description_text": {
+            "type": "string"
+          },
+          "name_description_text_en": {
+            "type": "string"
+          },
+          "name_description_text_ko": {
+            "type": "string"
+          },
+          "name_description_text_cn": {
+            "type": "string"
+          },
+          "name_description_text_tw": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "api_id": {
+            "type": "string"
+          },
+          "api_area_id": {
+            "type": "string"
+          },
+          "reservation_url": {
+            "type": "string"
+          },
+          "price": {
+            "type": "string"
+          },
+          "price_en": {
+            "type": "string"
+          },
+          "price_ko": {
+            "type": "string"
+          },
+          "price_cn": {
+            "type": "string"
+          },
+          "price_tw": {
+            "type": "string"
+          },
+          "price_label_free": {
+            "type": "boolean"
+          },
+          "price_label_paid": {
+            "type": "boolean"
+          },
+          "price_label_reserve": {
+            "type": "boolean"
+          },
+          "time_to_park_min": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "note": {
+            "type": "string"
+          },
+          "note_en": {
+            "type": "string"
+          },
+          "note_ko": {
+            "type": "string"
+          },
+          "note_cn": {
+            "type": "string"
+          },
+          "note_tw": {
+            "type": "string"
+          },
+          "address": {
+            "type": "string"
+          },
+          "address_en": {
+            "type": "string"
+          },
+          "address_ko": {
+            "type": "string"
+          },
+          "address_cn": {
+            "type": "string"
+          },
+          "address_tw": {
+            "type": "string"
+          },
+          "start_time": {
+            "type": "string"
+          },
+          "end_time": {
+            "type": "string"
+          },
+          "map_url": {
+            "type": "string"
+          },
+          "map_url_sc": {
+            "type": "string"
+          },
+          "map_pin_bubble_side": {
+            "type": "string"
+          },
+          "iframe_map_url": {
+            "type": "string"
+          },
+          "map_coords_mobile": {
+            "type": "string"
+          },
+          "map_coords": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "is_disabled",
+          "id_disabled",
+          "name",
+          "name_en",
+          "name_ko",
+          "name_cn",
+          "name_tw",
+          "name_description_text",
+          "name_description_text_en",
+          "name_description_text_ko",
+          "name_description_text_cn",
+          "name_description_text_tw",
+          "id",
+          "api_id",
+          "api_area_id",
+          "reservation_url",
+          "price",
+          "price_en",
+          "price_ko",
+          "price_cn",
+          "price_tw",
+          "price_label_free",
+          "price_label_paid",
+          "price_label_reserve",
+          "time_to_park_min",
+          "note",
+          "note_en",
+          "note_ko",
+          "note_cn",
+          "note_tw",
+          "address",
+          "address_en",
+          "address_ko",
+          "address_cn",
+          "address_tw",
+          "start_time",
+          "end_time",
+          "map_url",
+          "map_url_sc",
+          "map_pin_bubble_side",
+          "iframe_map_url",
+          "map_coords_mobile",
+          "map_coords"
+        ]
+      }
+    },
+    "experience_agreement": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "is_disabled": {
+            "type": "boolean"
+          },
+          "name": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "attraction_slug": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "title_en": {
+            "type": "string"
+          },
+          "title_ko": {
+            "type": "string"
+          },
+          "title_cn": {
+            "type": "string"
+          },
+          "title_tw": {
+            "type": "string"
+          },
+          "body": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "body_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "body_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "body_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "body_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "is_disabled",
+          "name",
+          "id",
+          "attraction_slug",
+          "title",
+          "title_en",
+          "title_ko",
+          "title_cn",
+          "title_tw",
+          "body",
+          "body_en",
+          "body_ko",
+          "body_cn",
+          "body_tw"
+        ]
+      }
+    },
+    "reservation_pass": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "is_disabled": {
+            "type": "boolean"
+          },
+          "id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "text_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "is_disabled",
+          "id",
+          "text",
+          "text_en",
+          "text_ko",
+          "text_cn",
+          "text_tw"
+        ]
+      }
+    },
+    "timetable_tabs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "is_disabled": {
+            "type": "boolean"
+          },
+          "tab_id": {
+            "type": "string"
+          },
+          "route_id": {
+            "type": "string"
+          },
+          "is_show_anchor_links": {
+            "type": "boolean"
+          },
+          "tab_title": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "tab_title_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "tab_title_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "tab_title_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "tab_title_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "reservation_notes": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "reservation_notes_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "reservation_notes_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "reservation_notes_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "reservation_notes_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "is_disabled",
+          "tab_id",
+          "route_id",
+          "is_show_anchor_links",
+          "tab_title",
+          "tab_title_en",
+          "tab_title_ko",
+          "tab_title_cn",
+          "tab_title_tw",
+          "reservation_notes",
+          "reservation_notes_en",
+          "reservation_notes_ko",
+          "reservation_notes_cn",
+          "reservation_notes_tw"
+        ]
+      }
+    },
+    "timetable_tables": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "is_disabled": {
+            "type": "boolean"
+          },
+          "table_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "table_id": {
+            "type": "string"
+          },
+          "tab_id": {
+            "type": "string"
+          },
+          "table_title_id": {
+            "type": "string"
+          },
+          "table_title": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "table_title_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "table_title_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "table_title_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "table_title_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "table_header_1": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "table_header_1_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "table_header_1_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "table_header_1_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "table_header_1_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "table_header_1_use_space": {
+            "type": "boolean"
+          },
+          "table_header_2": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "table_header_2_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "table_header_2_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "table_header_2_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "table_header_2_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "table_header_2_use_space": {
+            "type": "boolean"
+          },
+          "table_header_3": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "table_header_3_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "table_header_3_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "table_header_3_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "table_header_3_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "table_header_3_use_space": {
+            "type": "boolean"
+          },
+          "table_note": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "table_note_en": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "table_note_ko": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "table_note_cn": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "table_note_tw": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "table_note_is_red": {
+            "type": "boolean"
+          },
+          "table_note_is_ordered": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "is_disabled",
+          "table_name",
+          "table_id",
+          "tab_id",
+          "table_title_id",
+          "table_title",
+          "table_title_en",
+          "table_title_ko",
+          "table_title_cn",
+          "table_title_tw",
+          "table_header_1",
+          "table_header_1_en",
+          "table_header_1_ko",
+          "table_header_1_cn",
+          "table_header_1_tw",
+          "table_header_1_use_space",
+          "table_header_2",
+          "table_header_2_en",
+          "table_header_2_ko",
+          "table_header_2_cn",
+          "table_header_2_tw",
+          "table_header_2_use_space",
+          "table_header_3",
+          "table_header_3_en",
+          "table_header_3_ko",
+          "table_header_3_cn",
+          "table_header_3_tw",
+          "table_header_3_use_space",
+          "table_note",
+          "table_note_en",
+          "table_note_ko",
+          "table_note_cn",
+          "table_note_tw",
+          "table_note_is_red",
+          "table_note_is_ordered"
+        ]
+      }
+    },
+    "timetable_times": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "is_disabled": {
+            "type": "boolean"
+          },
+          "time_name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "table_id": {
+            "type": "string"
+          },
+          "row_index": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "col1_value": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "col2_value": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "col3_value": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "col_is_red": {
+            "type": "boolean"
+          },
+          "col_symbols": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "is_disabled",
+          "time_name",
+          "table_id",
+          "row_index",
+          "col1_value",
+          "col2_value",
+          "col3_value",
+          "col_is_red",
+          "col_symbols"
+        ]
+      }
+    }
+  },
+  "required": [
+    "$schema",
+    "articles",
+    "pages",
+    "products",
+    "attractions",
+    "attraction_categories",
+    "temporary_closures",
+    "experiences",
+    "restaurants",
+    "food_menus",
+    "spa",
+    "crowdedness",
+    "calendar",
+    "night_show_calendar",
+    "day_show_calendar",
+    "calendar_restaurant",
+    "goods",
+    "goods_categories",
+    "shops",
+    "areas",
+    "partners",
+    "hotels",
+    "translations",
+    "park_service_guide",
+    "spa_service_guide",
+    "topics",
+    "important_news",
+    "ota_banners",
+    "access_ota_banners",
+    "ticket_notes",
+    "premium_pass_notes",
+    "ticket_notes_1day",
+    "ticket_notes_afternoon",
+    "ticket_notes_afternoon_set",
+    "ticket_notes_afternoon_plus",
+    "ticket_notes_spa",
+    "ticket_notes_premium_pass",
+    "ticket_notes_park_spa_1day",
+    "ticket_notes_okinawa_resident",
+    "ticket_notes_okinawa_kids_free",
+    "ticket_notes_spa_guide",
+    "comfort_navi_photo_list",
+    "tickets",
+    "premium_pass",
+    "premium_pass_list",
+    "jtb_banner",
+    "parking_status",
+    "experience_agreement",
+    "reservation_pass",
+    "timetable_tabs",
+    "timetable_tables",
+    "timetable_times"
+  ]
+}

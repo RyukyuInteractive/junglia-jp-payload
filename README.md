@@ -12,6 +12,29 @@ From there you can connect your code to a git provider such Github or Gitlab, na
 
 ## Quick Start - local setup
 
+開発サーバーはポート **3002** で起動します：
+
+```bash
+bun dev
+# http://localhost:3002
+```
+
+### Export API
+
+CMSのデータをJSON形式でエクスポートするAPIエンドポイント：
+
+```bash
+# データ取得
+curl -H "Authorization: Bearer $JSON_API_KEY" http://localhost:3002/api/export
+
+# スキーマ取得
+curl -H "Authorization: Bearer $JSON_API_KEY" http://localhost:3002/api/export/schema.json
+```
+
+`JSON_API_KEY` 環境変数でBearer認証が有効になります。
+
+---
+
 To spin up this template locally, follow these steps:
 
 ### Clone
@@ -55,25 +78,25 @@ You can enable read replicas by adding `readReplicas: 'first-primary'` in the DB
 Firstly, after installing dependencies locally you need to authenticate with Wrangler by running:
 
 ```bash
-pnpm wrangler login
+bun wrangler login
 ```
 
-This will take you to Cloudflare to login and then you can use the Wrangler CLI locally for anything, use `pnpm wrangler help` to see all available options.
+This will take you to Cloudflare to login and then you can use the Wrangler CLI locally for anything, use `bun wrangler help` to see all available options.
 
-Wrangler is pretty smart so it will automatically bind your services for local development just by running `pnpm dev`.
+Wrangler is pretty smart so it will automatically bind your services for local development just by running `bun dev`.
 
 ## Deployments
 
 When you're ready to deploy, first make sure you have created your migrations:
 
 ```bash
-pnpm payload migrate:create
+bun payload migrate:create
 ```
 
 Then run the following command:
 
 ```bash
-pnpm run deploy
+bun run deploy
 ```
 
 This will spin up Wrangler in `production` mode, run any created migrations, build the app and then deploy the bundle up to Cloudflare.

@@ -69,6 +69,57 @@ export interface Config {
   collections: {
     users: User;
     media: Media;
+    articles: Article;
+    pages: Page;
+    products: Product;
+    attractions: Attraction;
+    'attraction-categories': AttractionCategory;
+    'temporary-closures': TemporaryClosure;
+    experiences: Experience;
+    restaurants: Restaurant;
+    'food-menus': FoodMenu;
+    spa: Spa;
+    crowdedness: Crowdedness;
+    calendar: Calendar;
+    'night-show-calendar': NightShowCalendar;
+    'day-show-calendar': DayShowCalendar;
+    'calendar-restaurant': CalendarRestaurant;
+    goods: Good;
+    'goods-categories': GoodsCategory;
+    shops: Shop;
+    areas: Area;
+    partners: Partner;
+    hotels: Hotel;
+    translations: Translation;
+    'park-service-guide': ParkServiceGuide;
+    'spa-service-guide': SpaServiceGuide;
+    topics: Topic;
+    'important-news': ImportantNew;
+    'ota-banners': OtaBanner;
+    'access-ota-banners': AccessOtaBanner;
+    'ticket-notes': TicketNote;
+    'premium-pass-notes': PremiumPassNote;
+    'ticket-notes-1day': TicketNotes1Day;
+    'ticket-notes-afternoon': TicketNotesAfternoon;
+    'ticket-notes-afternoon-set': TicketNotesAfternoonSet;
+    'ticket-notes-afternoon-plus': TicketNotesAfternoonPlus;
+    'ticket-notes-spa': TicketNotesSpa;
+    'ticket-notes-premium-pass': TicketNotesPremiumPass;
+    'ticket-notes-park-spa-1day': TicketNotesParkSpa1Day;
+    'ticket-notes-okinawa-resident': TicketNotesOkinawaResident;
+    'ticket-notes-okinawa-kids-free': TicketNotesOkinawaKidsFree;
+    'ticket-notes-spa-guide': TicketNotesSpaGuide;
+    'comfort-navi-photo-list': ComfortNaviPhotoList;
+    tickets: Ticket;
+    'premium-pass': PremiumPass;
+    'premium-pass-list': PremiumPassList;
+    'jtb-banner': JtbBanner;
+    'parking-status': ParkingStatus;
+    'experience-agreement': ExperienceAgreement;
+    'reservation-pass': ReservationPass;
+    'timetable-tabs': TimetableTab;
+    'timetable-tables': TimetableTable;
+    'timetable-times': TimetableTime;
     'payload-kv': PayloadKv;
     'payload-locked-documents': PayloadLockedDocument;
     'payload-preferences': PayloadPreference;
@@ -78,6 +129,57 @@ export interface Config {
   collectionsSelect: {
     users: UsersSelect<false> | UsersSelect<true>;
     media: MediaSelect<false> | MediaSelect<true>;
+    articles: ArticlesSelect<false> | ArticlesSelect<true>;
+    pages: PagesSelect<false> | PagesSelect<true>;
+    products: ProductsSelect<false> | ProductsSelect<true>;
+    attractions: AttractionsSelect<false> | AttractionsSelect<true>;
+    'attraction-categories': AttractionCategoriesSelect<false> | AttractionCategoriesSelect<true>;
+    'temporary-closures': TemporaryClosuresSelect<false> | TemporaryClosuresSelect<true>;
+    experiences: ExperiencesSelect<false> | ExperiencesSelect<true>;
+    restaurants: RestaurantsSelect<false> | RestaurantsSelect<true>;
+    'food-menus': FoodMenusSelect<false> | FoodMenusSelect<true>;
+    spa: SpaSelect<false> | SpaSelect<true>;
+    crowdedness: CrowdednessSelect<false> | CrowdednessSelect<true>;
+    calendar: CalendarSelect<false> | CalendarSelect<true>;
+    'night-show-calendar': NightShowCalendarSelect<false> | NightShowCalendarSelect<true>;
+    'day-show-calendar': DayShowCalendarSelect<false> | DayShowCalendarSelect<true>;
+    'calendar-restaurant': CalendarRestaurantSelect<false> | CalendarRestaurantSelect<true>;
+    goods: GoodsSelect<false> | GoodsSelect<true>;
+    'goods-categories': GoodsCategoriesSelect<false> | GoodsCategoriesSelect<true>;
+    shops: ShopsSelect<false> | ShopsSelect<true>;
+    areas: AreasSelect<false> | AreasSelect<true>;
+    partners: PartnersSelect<false> | PartnersSelect<true>;
+    hotels: HotelsSelect<false> | HotelsSelect<true>;
+    translations: TranslationsSelect<false> | TranslationsSelect<true>;
+    'park-service-guide': ParkServiceGuideSelect<false> | ParkServiceGuideSelect<true>;
+    'spa-service-guide': SpaServiceGuideSelect<false> | SpaServiceGuideSelect<true>;
+    topics: TopicsSelect<false> | TopicsSelect<true>;
+    'important-news': ImportantNewsSelect<false> | ImportantNewsSelect<true>;
+    'ota-banners': OtaBannersSelect<false> | OtaBannersSelect<true>;
+    'access-ota-banners': AccessOtaBannersSelect<false> | AccessOtaBannersSelect<true>;
+    'ticket-notes': TicketNotesSelect<false> | TicketNotesSelect<true>;
+    'premium-pass-notes': PremiumPassNotesSelect<false> | PremiumPassNotesSelect<true>;
+    'ticket-notes-1day': TicketNotes1DaySelect<false> | TicketNotes1DaySelect<true>;
+    'ticket-notes-afternoon': TicketNotesAfternoonSelect<false> | TicketNotesAfternoonSelect<true>;
+    'ticket-notes-afternoon-set': TicketNotesAfternoonSetSelect<false> | TicketNotesAfternoonSetSelect<true>;
+    'ticket-notes-afternoon-plus': TicketNotesAfternoonPlusSelect<false> | TicketNotesAfternoonPlusSelect<true>;
+    'ticket-notes-spa': TicketNotesSpaSelect<false> | TicketNotesSpaSelect<true>;
+    'ticket-notes-premium-pass': TicketNotesPremiumPassSelect<false> | TicketNotesPremiumPassSelect<true>;
+    'ticket-notes-park-spa-1day': TicketNotesParkSpa1DaySelect<false> | TicketNotesParkSpa1DaySelect<true>;
+    'ticket-notes-okinawa-resident': TicketNotesOkinawaResidentSelect<false> | TicketNotesOkinawaResidentSelect<true>;
+    'ticket-notes-okinawa-kids-free': TicketNotesOkinawaKidsFreeSelect<false> | TicketNotesOkinawaKidsFreeSelect<true>;
+    'ticket-notes-spa-guide': TicketNotesSpaGuideSelect<false> | TicketNotesSpaGuideSelect<true>;
+    'comfort-navi-photo-list': ComfortNaviPhotoListSelect<false> | ComfortNaviPhotoListSelect<true>;
+    tickets: TicketsSelect<false> | TicketsSelect<true>;
+    'premium-pass': PremiumPassSelect<false> | PremiumPassSelect<true>;
+    'premium-pass-list': PremiumPassListSelect<false> | PremiumPassListSelect<true>;
+    'jtb-banner': JtbBannerSelect<false> | JtbBannerSelect<true>;
+    'parking-status': ParkingStatusSelect<false> | ParkingStatusSelect<true>;
+    'experience-agreement': ExperienceAgreementSelect<false> | ExperienceAgreementSelect<true>;
+    'reservation-pass': ReservationPassSelect<false> | ReservationPassSelect<true>;
+    'timetable-tabs': TimetableTabsSelect<false> | TimetableTabsSelect<true>;
+    'timetable-tables': TimetableTablesSelect<false> | TimetableTablesSelect<true>;
+    'timetable-times': TimetableTimesSelect<false> | TimetableTimesSelect<true>;
     'payload-kv': PayloadKvSelect<false> | PayloadKvSelect<true>;
     'payload-locked-documents': PayloadLockedDocumentsSelect<false> | PayloadLockedDocumentsSelect<true>;
     'payload-preferences': PayloadPreferencesSelect<false> | PayloadPreferencesSelect<true>;
@@ -159,6 +261,1112 @@ export interface Media {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "articles".
+ */
+export interface Article {
+  id: number;
+  type?: string | null;
+  date?: string | null;
+  slug?: string | null;
+  title?: string | null;
+  title_en?: string | null;
+  title_ko?: string | null;
+  title_cn?: string | null;
+  title_tw?: string | null;
+  url?: string | null;
+  url_en?: string | null;
+  url_ko?: string | null;
+  url_cn?: string | null;
+  url_tw?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "pages".
+ */
+export interface Page {
+  id: number;
+  is_disabled?: boolean | null;
+  path?: string | null;
+  title?: string | null;
+  title_en?: string | null;
+  title_ko?: string | null;
+  title_cn?: string | null;
+  title_tw?: string | null;
+  description?: string | null;
+  description_en?: string | null;
+  description_ko?: string | null;
+  description_cn?: string | null;
+  description_tw?: string | null;
+  ogp_image_url?: string | null;
+  ogp_image_url_en?: string | null;
+  ogp_image_url_ko?: string | null;
+  ogp_image_url_cn?: string | null;
+  ogp_image_url_tw?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "products".
+ */
+export interface Product {
+  id: number;
+  category?: string | null;
+  is_disabled?: boolean | null;
+  slug?: string | null;
+  area?: string | null;
+  image_url?: string | null;
+  flutter_map_position_top?: number | null;
+  flutter_map_position_left?: number | null;
+  map_coords_mobile?: string | null;
+  map_coords?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "attractions".
+ */
+export interface Attraction {
+  id: number;
+  slug?: string | null;
+  is_disabled?: boolean | null;
+  name?: string | null;
+  name_kana?: string | null;
+  category?: string | null;
+  area?: string | null;
+  type?: string | null;
+  premium_pass?: string | null;
+  photo_service?: boolean | null;
+  is_limit_disabled?: boolean | null;
+  limit_title?: string | null;
+  limit_text_field?: string | null;
+  limit_age_min?: number | null;
+  limit_passenger_age_min?: number | null;
+  limit_weight_min?: number | null;
+  limit_weight_max?: number | null;
+  limit_height_min?: number | null;
+  accompanied_age?: number | null;
+  parental_consent?: boolean | null;
+  driving_license?: boolean | null;
+  restricted_users?: string | null;
+  restricted_users_en?: string | null;
+  restricted_users_ko?: string | null;
+  restricted_users_cn?: string | null;
+  restricted_users_tw?: string | null;
+  notes?: string | null;
+  notes_en?: string | null;
+  notes_ko?: string | null;
+  notes_cn?: string | null;
+  notes_tw?: string | null;
+  ticket_premium_pass?: string | null;
+  ticket_same_day?: string | null;
+  disclaimer?: string | null;
+  image_url?: string | null;
+  image_url_small?: string | null;
+  image_url_2?: string | null;
+  image_url_3?: string | null;
+  image_url_4?: string | null;
+  image_url_5?: string | null;
+  image_url_6?: string | null;
+  ogp_image_url?: string | null;
+  tagline?: string | null;
+  tagline_en?: string | null;
+  tagline_ko?: string | null;
+  tagline_cn?: string | null;
+  tagline_tw?: string | null;
+  description?: string | null;
+  description_en?: string | null;
+  description_ko?: string | null;
+  description_cn?: string | null;
+  description_tw?: string | null;
+  limit_old_age?: boolean | null;
+  callout?: string | null;
+  callout_en?: string | null;
+  callout_ko?: string | null;
+  callout_cn?: string | null;
+  callout_tw?: string | null;
+  youtube_id?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "attraction-categories".
+ */
+export interface AttractionCategory {
+  id: string;
+  category?: string | null;
+  description?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "temporary-closures".
+ */
+export interface TemporaryClosure {
+  id: number;
+  attraction?: string | null;
+  text?: string | null;
+  text_en?: string | null;
+  text_ko?: string | null;
+  text_cn?: string | null;
+  text_tw?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "experiences".
+ */
+export interface Experience {
+  id: number;
+  slug?: string | null;
+  is_disabled?: boolean | null;
+  name?: string | null;
+  name_kana?: string | null;
+  area?: string | null;
+  tagline?: string | null;
+  tagline_en?: string | null;
+  tagline_ko?: string | null;
+  tagline_cn?: string | null;
+  tagline_tw?: string | null;
+  description?: string | null;
+  description_en?: string | null;
+  description_ko?: string | null;
+  description_cn?: string | null;
+  description_tw?: string | null;
+  image_url?: string | null;
+  image_url_small?: string | null;
+  ogp_image_url?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "restaurants".
+ */
+export interface Restaurant {
+  id: number;
+  slug?: string | null;
+  is_disabled?: boolean | null;
+  area?: string | null;
+  name?: string | null;
+  name_kana?: string | null;
+  tagline?: string | null;
+  tagline_en?: string | null;
+  tagline_ko?: string | null;
+  tagline_cn?: string | null;
+  tagline_tw?: string | null;
+  description?: string | null;
+  description_en?: string | null;
+  description_ko?: string | null;
+  description_cn?: string | null;
+  description_tw?: string | null;
+  reservation_url?: string | null;
+  reservation_url_en?: string | null;
+  reservation_url_ko?: string | null;
+  reservation_url_cn?: string | null;
+  reservation_url_tw?: string | null;
+  business_start_time?: string | null;
+  business_end_time?: string | null;
+  image_url?: string | null;
+  image_url_small?: string | null;
+  image_url_main?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "food-menus".
+ */
+export interface FoodMenu {
+  id: number;
+  is_disabled?: boolean | null;
+  is_new?: boolean | null;
+  name?: string | null;
+  name_en?: string | null;
+  name_ko?: string | null;
+  name_cn?: string | null;
+  name_tw?: string | null;
+  slug?: string | null;
+  restaurant_slug?: string | null;
+  category?: string | null;
+  description?: string | null;
+  description_en?: string | null;
+  description_ko?: string | null;
+  description_cn?: string | null;
+  description_tw?: string | null;
+  details_title?: string | null;
+  details_title_en?: string | null;
+  details_title_ko?: string | null;
+  details_title_cn?: string | null;
+  details_title_tw?: string | null;
+  details_body?: string | null;
+  details_body_en?: string | null;
+  details_body_ko?: string | null;
+  details_body_cn?: string | null;
+  details_body_tw?: string | null;
+  notes?: string | null;
+  notes_en?: string | null;
+  notes_ko?: string | null;
+  notes_cn?: string | null;
+  notes_tw?: string | null;
+  price_ex_tax?: number | null;
+  price_in_tax?: number | null;
+  main_image_url?: string | null;
+  image_url_1?: string | null;
+  image_url_2?: string | null;
+  image_url_3?: string | null;
+  image_url_4?: string | null;
+  image_url_5?: string | null;
+  image_url_6?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "spa".
+ */
+export interface Spa {
+  id: number;
+  slug?: string | null;
+  is_disabled?: boolean | null;
+  area?: string | null;
+  name?: string | null;
+  name_kana?: string | null;
+  tagline?: string | null;
+  tagline_en?: string | null;
+  tagline_ko?: string | null;
+  tagline_cn?: string | null;
+  tagline_tw?: string | null;
+  description?: string | null;
+  description_en?: string | null;
+  description_ko?: string | null;
+  description_cn?: string | null;
+  description_tw?: string | null;
+  image_url?: string | null;
+  image_url_small?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "crowdedness".
+ */
+export interface Crowdedness {
+  id: number;
+  mens_bath?: string | null;
+  womens_bath?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "calendar".
+ */
+export interface Calendar {
+  id: number;
+  id_disabled?: boolean | null;
+  date?: string | null;
+  park_start_time?: string | null;
+  park_end_time?: string | null;
+  spa_start_time?: string | null;
+  spa_end_time?: string | null;
+  restaurant_closes_at?: string | null;
+  is_restaurant_notes?: boolean | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "night-show-calendar".
+ */
+export interface NightShowCalendar {
+  id: number;
+  is_disabled?: boolean | null;
+  date?: string | null;
+  junglia_hanabi_start_time?: string | null;
+  junglia_hanabi_custom?: string | null;
+  junglia_night_fes_start_time?: string | null;
+  junglia_night_fes_custom?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "day-show-calendar".
+ */
+export interface DayShowCalendar {
+  id: number;
+  is_disabled?: boolean | null;
+  date?: string | null;
+  junglia_splash_fes_start_time?: string | null;
+  junglia_splash_fes_custom?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "calendar-restaurant".
+ */
+export interface CalendarRestaurant {
+  id: number;
+  is_disabled?: boolean | null;
+  date?: string | null;
+  panorama_dining_opens_at?: string | null;
+  panorama_dining_closes_at?: string | null;
+  panorama_dining_custom?: string | null;
+  wild_banquet_opens_at?: string | null;
+  wild_banquet_closes_at?: string | null;
+  wild_banquet_custom?: string | null;
+  sunset_beer_terrace_opens_at?: string | null;
+  sunset_beer_terrace_closes_at?: string | null;
+  sunset_beer_terrace_custom?: string | null;
+  tropical_oasis_opens_at?: string | null;
+  tropical_oasis_closes_at?: string | null;
+  tropical_oasis_custom?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "goods".
+ */
+export interface Good {
+  id: number;
+  is_disabled?: boolean | null;
+  is_new?: boolean | null;
+  name?: string | null;
+  name_en?: string | null;
+  name_ko?: string | null;
+  name_cn?: string | null;
+  name_tw?: string | null;
+  slug?: string | null;
+  category?: string | null;
+  shop?: string | null;
+  attractions?: string | null;
+  description?: string | null;
+  description_en?: string | null;
+  description_ko?: string | null;
+  description_cn?: string | null;
+  description_tw?: string | null;
+  type?: string | null;
+  type_en?: string | null;
+  type_ko?: string | null;
+  type_cn?: string | null;
+  type_tw?: string | null;
+  release_date?: string | null;
+  release_date_en?: string | null;
+  release_date_ko?: string | null;
+  release_date_cn?: string | null;
+  release_date_tw?: string | null;
+  price_ex_tax?: number | null;
+  price_in_tax?: number | null;
+  main_image_url?: string | null;
+  image_url_1?: string | null;
+  image_url_2?: string | null;
+  image_url_3?: string | null;
+  image_url_4?: string | null;
+  image_url_5?: string | null;
+  image_url_6?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "goods-categories".
+ */
+export interface GoodsCategory {
+  id: string;
+  category?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "shops".
+ */
+export interface Shop {
+  id: number;
+  name_kana?: string | null;
+  name?: string | null;
+  is_disabled?: boolean | null;
+  slug?: string | null;
+  area?: string | null;
+  tagline?: string | null;
+  tagline_en?: string | null;
+  tagline_ko?: string | null;
+  tagline_cn?: string | null;
+  tagline_tw?: string | null;
+  description?: string | null;
+  description_en?: string | null;
+  description_ko?: string | null;
+  description_cn?: string | null;
+  description_tw?: string | null;
+  image_url?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "areas".
+ */
+export interface Area {
+  id: number;
+  name?: string | null;
+  slug?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "partners".
+ */
+export interface Partner {
+  id: number;
+  name?: string | null;
+  name_en?: string | null;
+  name_ko?: string | null;
+  name_cn?: string | null;
+  name_tw?: string | null;
+  description?: string | null;
+  description_en?: string | null;
+  description_ko?: string | null;
+  description_cn?: string | null;
+  description_tw?: string | null;
+  url?: string | null;
+  image_url?: string | null;
+  is_disabled?: boolean | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "hotels".
+ */
+export interface Hotel {
+  id: number;
+  name?: string | null;
+  name_en?: string | null;
+  name_ko?: string | null;
+  name_cn?: string | null;
+  name_tw?: string | null;
+  description?: string | null;
+  description_en?: string | null;
+  description_ko?: string | null;
+  description_cn?: string | null;
+  description_tw?: string | null;
+  url?: string | null;
+  url_en?: string | null;
+  url_ko?: string | null;
+  url_cn?: string | null;
+  url_tw?: string | null;
+  image_url?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "translations".
+ */
+export interface Translation {
+  id: number;
+  is_disabled?: boolean | null;
+  path?: string | null;
+  key?: string | null;
+  ja?: string | null;
+  en?: string | null;
+  ko?: string | null;
+  cn?: string | null;
+  tw?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "park-service-guide".
+ */
+export interface ParkServiceGuide {
+  id: number;
+  is_disabled?: boolean | null;
+  category?: string | null;
+  category_id?: string | null;
+  title?: string | null;
+  title_en?: string | null;
+  title_ko?: string | null;
+  title_cn?: string | null;
+  title_tw?: string | null;
+  title_id?: string | null;
+  subtitle?: string | null;
+  subtitle_en?: string | null;
+  subtitle_ko?: string | null;
+  subtitle_cn?: string | null;
+  subtitle_tw?: string | null;
+  body?: string | null;
+  body_en?: string | null;
+  body_ko?: string | null;
+  body_cn?: string | null;
+  body_tw?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "spa-service-guide".
+ */
+export interface SpaServiceGuide {
+  id: number;
+  is_disabled?: boolean | null;
+  category?: string | null;
+  category_id?: string | null;
+  title?: string | null;
+  title_en?: string | null;
+  title_ko?: string | null;
+  title_cn?: string | null;
+  title_tw?: string | null;
+  title_id?: string | null;
+  subtitle?: string | null;
+  subtitle_en?: string | null;
+  subtitle_ko?: string | null;
+  subtitle_cn?: string | null;
+  subtitle_tw?: string | null;
+  body?: string | null;
+  body_en?: string | null;
+  body_ko?: string | null;
+  body_cn?: string | null;
+  body_tw?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "topics".
+ */
+export interface Topic {
+  id: number;
+  is_disabled?: boolean | null;
+  title?: string | null;
+  title_en?: string | null;
+  title_ko?: string | null;
+  title_cn?: string | null;
+  title_tw?: string | null;
+  note?: string | null;
+  note_en?: string | null;
+  note_ko?: string | null;
+  note_cn?: string | null;
+  note_tw?: string | null;
+  url?: string | null;
+  url_en?: string | null;
+  url_ko?: string | null;
+  url_cn?: string | null;
+  url_tw?: string | null;
+  image_url?: string | null;
+  image_url_en?: string | null;
+  image_url_ko?: string | null;
+  image_url_cn?: string | null;
+  image_url_tw?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "important-news".
+ */
+export interface ImportantNew {
+  id: number;
+  title?: string | null;
+  title_en?: string | null;
+  title_ko?: string | null;
+  title_cn?: string | null;
+  title_tw?: string | null;
+  url?: string | null;
+  url_en?: string | null;
+  url_ko?: string | null;
+  url_cn?: string | null;
+  url_tw?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ota-banners".
+ */
+export interface OtaBanner {
+  id: number;
+  is_disabled?: boolean | null;
+  language?: string | null;
+  url?: string | null;
+  image_url?: string | null;
+  image_alt?: string | null;
+  event?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "access-ota-banners".
+ */
+export interface AccessOtaBanner {
+  id: number;
+  is_disabled?: boolean | null;
+  language?: string | null;
+  url?: string | null;
+  image_url?: string | null;
+  image_alt?: string | null;
+  event?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ticket-notes".
+ */
+export interface TicketNote {
+  id: number;
+  is_disabled_ticket?: boolean | null;
+  is_disabled_spa?: boolean | null;
+  is_disabled_resident?: boolean | null;
+  text?: string | null;
+  text_en?: string | null;
+  text_ko?: string | null;
+  text_cn?: string | null;
+  text_tw?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "premium-pass-notes".
+ */
+export interface PremiumPassNote {
+  id: number;
+  is_disabled?: boolean | null;
+  text?: string | null;
+  text_en?: string | null;
+  text_ko?: string | null;
+  text_cn?: string | null;
+  text_tw?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ticket-notes-1day".
+ */
+export interface TicketNotes1Day {
+  id: number;
+  is_disabled?: boolean | null;
+  type?: string | null;
+  type_name?: string | null;
+  text?: string | null;
+  text_en?: string | null;
+  text_ko?: string | null;
+  text_cn?: string | null;
+  text_tw?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ticket-notes-afternoon".
+ */
+export interface TicketNotesAfternoon {
+  id: number;
+  is_disabled?: boolean | null;
+  type?: string | null;
+  type_name?: string | null;
+  text?: string | null;
+  text_en?: string | null;
+  text_ko?: string | null;
+  text_cn?: string | null;
+  text_tw?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ticket-notes-afternoon-set".
+ */
+export interface TicketNotesAfternoonSet {
+  id: number;
+  is_disabled?: boolean | null;
+  type?: string | null;
+  type_name?: string | null;
+  text?: string | null;
+  text_en?: string | null;
+  text_ko?: string | null;
+  text_cn?: string | null;
+  text_tw?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ticket-notes-afternoon-plus".
+ */
+export interface TicketNotesAfternoonPlus {
+  id: number;
+  is_disabled?: boolean | null;
+  type?: string | null;
+  type_name?: string | null;
+  text?: string | null;
+  text_en?: string | null;
+  text_ko?: string | null;
+  text_cn?: string | null;
+  text_tw?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ticket-notes-spa".
+ */
+export interface TicketNotesSpa {
+  id: number;
+  is_disabled?: boolean | null;
+  type?: string | null;
+  type_name?: string | null;
+  text?: string | null;
+  text_en?: string | null;
+  text_ko?: string | null;
+  text_cn?: string | null;
+  text_tw?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ticket-notes-premium-pass".
+ */
+export interface TicketNotesPremiumPass {
+  id: number;
+  is_disabled?: boolean | null;
+  type?: string | null;
+  type_name?: string | null;
+  text?: string | null;
+  text_en?: string | null;
+  text_ko?: string | null;
+  text_cn?: string | null;
+  text_tw?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ticket-notes-park-spa-1day".
+ */
+export interface TicketNotesParkSpa1Day {
+  id: number;
+  is_disabled?: boolean | null;
+  type?: string | null;
+  type_name?: string | null;
+  text?: string | null;
+  text_en?: string | null;
+  text_ko?: string | null;
+  text_cn?: string | null;
+  text_tw?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ticket-notes-okinawa-resident".
+ */
+export interface TicketNotesOkinawaResident {
+  id: number;
+  is_disabled?: boolean | null;
+  type?: string | null;
+  type_name?: string | null;
+  text?: string | null;
+  text_en?: string | null;
+  text_ko?: string | null;
+  text_cn?: string | null;
+  text_tw?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ticket-notes-okinawa-kids-free".
+ */
+export interface TicketNotesOkinawaKidsFree {
+  id: number;
+  is_disabled?: boolean | null;
+  type?: string | null;
+  type_name?: string | null;
+  text?: string | null;
+  text_en?: string | null;
+  text_ko?: string | null;
+  text_cn?: string | null;
+  text_tw?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ticket-notes-spa-guide".
+ */
+export interface TicketNotesSpaGuide {
+  id: number;
+  is_disabled?: boolean | null;
+  type?: string | null;
+  type_name?: string | null;
+  text?: string | null;
+  text_en?: string | null;
+  text_ko?: string | null;
+  text_cn?: string | null;
+  text_tw?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "comfort-navi-photo-list".
+ */
+export interface ComfortNaviPhotoList {
+  id: number;
+  is_disabled?: boolean | null;
+  url?: string | null;
+  image_url?: string | null;
+  image_alt?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "tickets".
+ */
+export interface Ticket {
+  is_disabled?: boolean | null;
+  id: string;
+  price_ex_tax?: string | null;
+  price_ex_tax_en?: string | null;
+  price_ex_tax_ko?: string | null;
+  price_ex_tax_cn?: string | null;
+  price_ex_tax_tw?: string | null;
+  price_inc_tax?: string | null;
+  price_inc_tax_en?: string | null;
+  price_inc_tax_ko?: string | null;
+  price_inc_tax_cn?: string | null;
+  price_inc_tax_tw?: string | null;
+  name?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "premium-pass".
+ */
+export interface PremiumPass {
+  id: string;
+  price_ex_tax?: number | null;
+  price_inc_tax?: number | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "premium-pass-list".
+ */
+export interface PremiumPassList {
+  id: number;
+  attractions?: string | null;
+  price?: string | null;
+  image_url?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "jtb-banner".
+ */
+export interface JtbBanner {
+  id: number;
+  is_disabled?: boolean | null;
+  text?: string | null;
+  url?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "parking-status".
+ */
+export interface ParkingStatus {
+  is_disabled?: boolean | null;
+  id_disabled?: boolean | null;
+  name?: string | null;
+  name_en?: string | null;
+  name_ko?: string | null;
+  name_cn?: string | null;
+  name_tw?: string | null;
+  name_description_text?: string | null;
+  name_description_text_en?: string | null;
+  name_description_text_ko?: string | null;
+  name_description_text_cn?: string | null;
+  name_description_text_tw?: string | null;
+  id: string;
+  api_id?: string | null;
+  api_area_id?: string | null;
+  reservation_url?: string | null;
+  price?: string | null;
+  price_en?: string | null;
+  price_ko?: string | null;
+  price_cn?: string | null;
+  price_tw?: string | null;
+  price_label_free?: boolean | null;
+  price_label_paid?: boolean | null;
+  price_label_reserve?: boolean | null;
+  time_to_park_min?: number | null;
+  note?: string | null;
+  note_en?: string | null;
+  note_ko?: string | null;
+  note_cn?: string | null;
+  note_tw?: string | null;
+  address?: string | null;
+  address_en?: string | null;
+  address_ko?: string | null;
+  address_cn?: string | null;
+  address_tw?: string | null;
+  start_time?: string | null;
+  end_time?: string | null;
+  map_url?: string | null;
+  map_url_sc?: string | null;
+  map_pin_bubble_side?: string | null;
+  iframe_map_url?: string | null;
+  map_coords_mobile?: string | null;
+  map_coords?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "experience-agreement".
+ */
+export interface ExperienceAgreement {
+  is_disabled?: boolean | null;
+  name?: string | null;
+  id: string;
+  attraction_slug?: string | null;
+  title?: string | null;
+  title_en?: string | null;
+  title_ko?: string | null;
+  title_cn?: string | null;
+  title_tw?: string | null;
+  body?: string | null;
+  body_en?: string | null;
+  body_ko?: string | null;
+  body_cn?: string | null;
+  body_tw?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "reservation-pass".
+ */
+export interface ReservationPass {
+  is_disabled?: boolean | null;
+  id: string;
+  text?: string | null;
+  text_en?: string | null;
+  text_ko?: string | null;
+  text_cn?: string | null;
+  text_tw?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "timetable-tabs".
+ */
+export interface TimetableTab {
+  id: number;
+  is_disabled?: boolean | null;
+  tab_id?: string | null;
+  route_id?: string | null;
+  is_show_anchor_links?: boolean | null;
+  tab_title?: string | null;
+  tab_title_en?: string | null;
+  tab_title_ko?: string | null;
+  tab_title_cn?: string | null;
+  tab_title_tw?: string | null;
+  reservation_notes?: string | null;
+  reservation_notes_en?: string | null;
+  reservation_notes_ko?: string | null;
+  reservation_notes_cn?: string | null;
+  reservation_notes_tw?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "timetable-tables".
+ */
+export interface TimetableTable {
+  id: number;
+  is_disabled?: boolean | null;
+  table_name?: string | null;
+  table_id?: string | null;
+  tab_id?: string | null;
+  table_title_id?: string | null;
+  table_title?: string | null;
+  table_title_en?: string | null;
+  table_title_ko?: string | null;
+  table_title_cn?: string | null;
+  table_title_tw?: string | null;
+  table_header_1?: string | null;
+  table_header_1_en?: string | null;
+  table_header_1_ko?: string | null;
+  table_header_1_cn?: string | null;
+  table_header_1_tw?: string | null;
+  table_header_1_use_space?: boolean | null;
+  table_header_2?: string | null;
+  table_header_2_en?: string | null;
+  table_header_2_ko?: string | null;
+  table_header_2_cn?: string | null;
+  table_header_2_tw?: string | null;
+  table_header_2_use_space?: boolean | null;
+  table_header_3?: string | null;
+  table_header_3_en?: string | null;
+  table_header_3_ko?: string | null;
+  table_header_3_cn?: string | null;
+  table_header_3_tw?: string | null;
+  table_header_3_use_space?: boolean | null;
+  table_note?: string | null;
+  table_note_en?: string | null;
+  table_note_ko?: string | null;
+  table_note_cn?: string | null;
+  table_note_tw?: string | null;
+  table_note_is_red?: boolean | null;
+  table_note_is_ordered?: boolean | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "timetable-times".
+ */
+export interface TimetableTime {
+  id: number;
+  is_disabled?: boolean | null;
+  time_name?: string | null;
+  table_id?: string | null;
+  row_index?: number | null;
+  col1_value?: string | null;
+  col2_value?: string | null;
+  col3_value?: string | null;
+  col_is_red?: boolean | null;
+  col_symbols?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "payload-kv".
  */
 export interface PayloadKv {
@@ -188,6 +1396,210 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'media';
         value: number | Media;
+      } | null)
+    | ({
+        relationTo: 'articles';
+        value: number | Article;
+      } | null)
+    | ({
+        relationTo: 'pages';
+        value: number | Page;
+      } | null)
+    | ({
+        relationTo: 'products';
+        value: number | Product;
+      } | null)
+    | ({
+        relationTo: 'attractions';
+        value: number | Attraction;
+      } | null)
+    | ({
+        relationTo: 'attraction-categories';
+        value: string | AttractionCategory;
+      } | null)
+    | ({
+        relationTo: 'temporary-closures';
+        value: number | TemporaryClosure;
+      } | null)
+    | ({
+        relationTo: 'experiences';
+        value: number | Experience;
+      } | null)
+    | ({
+        relationTo: 'restaurants';
+        value: number | Restaurant;
+      } | null)
+    | ({
+        relationTo: 'food-menus';
+        value: number | FoodMenu;
+      } | null)
+    | ({
+        relationTo: 'spa';
+        value: number | Spa;
+      } | null)
+    | ({
+        relationTo: 'crowdedness';
+        value: number | Crowdedness;
+      } | null)
+    | ({
+        relationTo: 'calendar';
+        value: number | Calendar;
+      } | null)
+    | ({
+        relationTo: 'night-show-calendar';
+        value: number | NightShowCalendar;
+      } | null)
+    | ({
+        relationTo: 'day-show-calendar';
+        value: number | DayShowCalendar;
+      } | null)
+    | ({
+        relationTo: 'calendar-restaurant';
+        value: number | CalendarRestaurant;
+      } | null)
+    | ({
+        relationTo: 'goods';
+        value: number | Good;
+      } | null)
+    | ({
+        relationTo: 'goods-categories';
+        value: string | GoodsCategory;
+      } | null)
+    | ({
+        relationTo: 'shops';
+        value: number | Shop;
+      } | null)
+    | ({
+        relationTo: 'areas';
+        value: number | Area;
+      } | null)
+    | ({
+        relationTo: 'partners';
+        value: number | Partner;
+      } | null)
+    | ({
+        relationTo: 'hotels';
+        value: number | Hotel;
+      } | null)
+    | ({
+        relationTo: 'translations';
+        value: number | Translation;
+      } | null)
+    | ({
+        relationTo: 'park-service-guide';
+        value: number | ParkServiceGuide;
+      } | null)
+    | ({
+        relationTo: 'spa-service-guide';
+        value: number | SpaServiceGuide;
+      } | null)
+    | ({
+        relationTo: 'topics';
+        value: number | Topic;
+      } | null)
+    | ({
+        relationTo: 'important-news';
+        value: number | ImportantNew;
+      } | null)
+    | ({
+        relationTo: 'ota-banners';
+        value: number | OtaBanner;
+      } | null)
+    | ({
+        relationTo: 'access-ota-banners';
+        value: number | AccessOtaBanner;
+      } | null)
+    | ({
+        relationTo: 'ticket-notes';
+        value: number | TicketNote;
+      } | null)
+    | ({
+        relationTo: 'premium-pass-notes';
+        value: number | PremiumPassNote;
+      } | null)
+    | ({
+        relationTo: 'ticket-notes-1day';
+        value: number | TicketNotes1Day;
+      } | null)
+    | ({
+        relationTo: 'ticket-notes-afternoon';
+        value: number | TicketNotesAfternoon;
+      } | null)
+    | ({
+        relationTo: 'ticket-notes-afternoon-set';
+        value: number | TicketNotesAfternoonSet;
+      } | null)
+    | ({
+        relationTo: 'ticket-notes-afternoon-plus';
+        value: number | TicketNotesAfternoonPlus;
+      } | null)
+    | ({
+        relationTo: 'ticket-notes-spa';
+        value: number | TicketNotesSpa;
+      } | null)
+    | ({
+        relationTo: 'ticket-notes-premium-pass';
+        value: number | TicketNotesPremiumPass;
+      } | null)
+    | ({
+        relationTo: 'ticket-notes-park-spa-1day';
+        value: number | TicketNotesParkSpa1Day;
+      } | null)
+    | ({
+        relationTo: 'ticket-notes-okinawa-resident';
+        value: number | TicketNotesOkinawaResident;
+      } | null)
+    | ({
+        relationTo: 'ticket-notes-okinawa-kids-free';
+        value: number | TicketNotesOkinawaKidsFree;
+      } | null)
+    | ({
+        relationTo: 'ticket-notes-spa-guide';
+        value: number | TicketNotesSpaGuide;
+      } | null)
+    | ({
+        relationTo: 'comfort-navi-photo-list';
+        value: number | ComfortNaviPhotoList;
+      } | null)
+    | ({
+        relationTo: 'tickets';
+        value: string | Ticket;
+      } | null)
+    | ({
+        relationTo: 'premium-pass';
+        value: string | PremiumPass;
+      } | null)
+    | ({
+        relationTo: 'premium-pass-list';
+        value: number | PremiumPassList;
+      } | null)
+    | ({
+        relationTo: 'jtb-banner';
+        value: number | JtbBanner;
+      } | null)
+    | ({
+        relationTo: 'parking-status';
+        value: string | ParkingStatus;
+      } | null)
+    | ({
+        relationTo: 'experience-agreement';
+        value: string | ExperienceAgreement;
+      } | null)
+    | ({
+        relationTo: 'reservation-pass';
+        value: string | ReservationPass;
+      } | null)
+    | ({
+        relationTo: 'timetable-tabs';
+        value: number | TimetableTab;
+      } | null)
+    | ({
+        relationTo: 'timetable-tables';
+        value: number | TimetableTable;
+      } | null)
+    | ({
+        relationTo: 'timetable-times';
+        value: number | TimetableTime;
       } | null);
   globalSlug?: string | null;
   user: {
@@ -268,6 +1680,1068 @@ export interface MediaSelect<T extends boolean = true> {
   filesize?: T;
   width?: T;
   height?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "articles_select".
+ */
+export interface ArticlesSelect<T extends boolean = true> {
+  type?: T;
+  date?: T;
+  slug?: T;
+  title?: T;
+  title_en?: T;
+  title_ko?: T;
+  title_cn?: T;
+  title_tw?: T;
+  url?: T;
+  url_en?: T;
+  url_ko?: T;
+  url_cn?: T;
+  url_tw?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "pages_select".
+ */
+export interface PagesSelect<T extends boolean = true> {
+  is_disabled?: T;
+  path?: T;
+  title?: T;
+  title_en?: T;
+  title_ko?: T;
+  title_cn?: T;
+  title_tw?: T;
+  description?: T;
+  description_en?: T;
+  description_ko?: T;
+  description_cn?: T;
+  description_tw?: T;
+  ogp_image_url?: T;
+  ogp_image_url_en?: T;
+  ogp_image_url_ko?: T;
+  ogp_image_url_cn?: T;
+  ogp_image_url_tw?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "products_select".
+ */
+export interface ProductsSelect<T extends boolean = true> {
+  category?: T;
+  is_disabled?: T;
+  slug?: T;
+  area?: T;
+  image_url?: T;
+  flutter_map_position_top?: T;
+  flutter_map_position_left?: T;
+  map_coords_mobile?: T;
+  map_coords?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "attractions_select".
+ */
+export interface AttractionsSelect<T extends boolean = true> {
+  slug?: T;
+  is_disabled?: T;
+  name?: T;
+  name_kana?: T;
+  category?: T;
+  area?: T;
+  type?: T;
+  premium_pass?: T;
+  photo_service?: T;
+  is_limit_disabled?: T;
+  limit_title?: T;
+  limit_text_field?: T;
+  limit_age_min?: T;
+  limit_passenger_age_min?: T;
+  limit_weight_min?: T;
+  limit_weight_max?: T;
+  limit_height_min?: T;
+  accompanied_age?: T;
+  parental_consent?: T;
+  driving_license?: T;
+  restricted_users?: T;
+  restricted_users_en?: T;
+  restricted_users_ko?: T;
+  restricted_users_cn?: T;
+  restricted_users_tw?: T;
+  notes?: T;
+  notes_en?: T;
+  notes_ko?: T;
+  notes_cn?: T;
+  notes_tw?: T;
+  ticket_premium_pass?: T;
+  ticket_same_day?: T;
+  disclaimer?: T;
+  image_url?: T;
+  image_url_small?: T;
+  image_url_2?: T;
+  image_url_3?: T;
+  image_url_4?: T;
+  image_url_5?: T;
+  image_url_6?: T;
+  ogp_image_url?: T;
+  tagline?: T;
+  tagline_en?: T;
+  tagline_ko?: T;
+  tagline_cn?: T;
+  tagline_tw?: T;
+  description?: T;
+  description_en?: T;
+  description_ko?: T;
+  description_cn?: T;
+  description_tw?: T;
+  limit_old_age?: T;
+  callout?: T;
+  callout_en?: T;
+  callout_ko?: T;
+  callout_cn?: T;
+  callout_tw?: T;
+  youtube_id?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "attraction-categories_select".
+ */
+export interface AttractionCategoriesSelect<T extends boolean = true> {
+  id?: T;
+  category?: T;
+  description?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "temporary-closures_select".
+ */
+export interface TemporaryClosuresSelect<T extends boolean = true> {
+  attraction?: T;
+  text?: T;
+  text_en?: T;
+  text_ko?: T;
+  text_cn?: T;
+  text_tw?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "experiences_select".
+ */
+export interface ExperiencesSelect<T extends boolean = true> {
+  slug?: T;
+  is_disabled?: T;
+  name?: T;
+  name_kana?: T;
+  area?: T;
+  tagline?: T;
+  tagline_en?: T;
+  tagline_ko?: T;
+  tagline_cn?: T;
+  tagline_tw?: T;
+  description?: T;
+  description_en?: T;
+  description_ko?: T;
+  description_cn?: T;
+  description_tw?: T;
+  image_url?: T;
+  image_url_small?: T;
+  ogp_image_url?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "restaurants_select".
+ */
+export interface RestaurantsSelect<T extends boolean = true> {
+  slug?: T;
+  is_disabled?: T;
+  area?: T;
+  name?: T;
+  name_kana?: T;
+  tagline?: T;
+  tagline_en?: T;
+  tagline_ko?: T;
+  tagline_cn?: T;
+  tagline_tw?: T;
+  description?: T;
+  description_en?: T;
+  description_ko?: T;
+  description_cn?: T;
+  description_tw?: T;
+  reservation_url?: T;
+  reservation_url_en?: T;
+  reservation_url_ko?: T;
+  reservation_url_cn?: T;
+  reservation_url_tw?: T;
+  business_start_time?: T;
+  business_end_time?: T;
+  image_url?: T;
+  image_url_small?: T;
+  image_url_main?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "food-menus_select".
+ */
+export interface FoodMenusSelect<T extends boolean = true> {
+  is_disabled?: T;
+  is_new?: T;
+  name?: T;
+  name_en?: T;
+  name_ko?: T;
+  name_cn?: T;
+  name_tw?: T;
+  slug?: T;
+  restaurant_slug?: T;
+  category?: T;
+  description?: T;
+  description_en?: T;
+  description_ko?: T;
+  description_cn?: T;
+  description_tw?: T;
+  details_title?: T;
+  details_title_en?: T;
+  details_title_ko?: T;
+  details_title_cn?: T;
+  details_title_tw?: T;
+  details_body?: T;
+  details_body_en?: T;
+  details_body_ko?: T;
+  details_body_cn?: T;
+  details_body_tw?: T;
+  notes?: T;
+  notes_en?: T;
+  notes_ko?: T;
+  notes_cn?: T;
+  notes_tw?: T;
+  price_ex_tax?: T;
+  price_in_tax?: T;
+  main_image_url?: T;
+  image_url_1?: T;
+  image_url_2?: T;
+  image_url_3?: T;
+  image_url_4?: T;
+  image_url_5?: T;
+  image_url_6?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "spa_select".
+ */
+export interface SpaSelect<T extends boolean = true> {
+  slug?: T;
+  is_disabled?: T;
+  area?: T;
+  name?: T;
+  name_kana?: T;
+  tagline?: T;
+  tagline_en?: T;
+  tagline_ko?: T;
+  tagline_cn?: T;
+  tagline_tw?: T;
+  description?: T;
+  description_en?: T;
+  description_ko?: T;
+  description_cn?: T;
+  description_tw?: T;
+  image_url?: T;
+  image_url_small?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "crowdedness_select".
+ */
+export interface CrowdednessSelect<T extends boolean = true> {
+  mens_bath?: T;
+  womens_bath?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "calendar_select".
+ */
+export interface CalendarSelect<T extends boolean = true> {
+  id_disabled?: T;
+  date?: T;
+  park_start_time?: T;
+  park_end_time?: T;
+  spa_start_time?: T;
+  spa_end_time?: T;
+  restaurant_closes_at?: T;
+  is_restaurant_notes?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "night-show-calendar_select".
+ */
+export interface NightShowCalendarSelect<T extends boolean = true> {
+  is_disabled?: T;
+  date?: T;
+  junglia_hanabi_start_time?: T;
+  junglia_hanabi_custom?: T;
+  junglia_night_fes_start_time?: T;
+  junglia_night_fes_custom?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "day-show-calendar_select".
+ */
+export interface DayShowCalendarSelect<T extends boolean = true> {
+  is_disabled?: T;
+  date?: T;
+  junglia_splash_fes_start_time?: T;
+  junglia_splash_fes_custom?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "calendar-restaurant_select".
+ */
+export interface CalendarRestaurantSelect<T extends boolean = true> {
+  is_disabled?: T;
+  date?: T;
+  panorama_dining_opens_at?: T;
+  panorama_dining_closes_at?: T;
+  panorama_dining_custom?: T;
+  wild_banquet_opens_at?: T;
+  wild_banquet_closes_at?: T;
+  wild_banquet_custom?: T;
+  sunset_beer_terrace_opens_at?: T;
+  sunset_beer_terrace_closes_at?: T;
+  sunset_beer_terrace_custom?: T;
+  tropical_oasis_opens_at?: T;
+  tropical_oasis_closes_at?: T;
+  tropical_oasis_custom?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "goods_select".
+ */
+export interface GoodsSelect<T extends boolean = true> {
+  is_disabled?: T;
+  is_new?: T;
+  name?: T;
+  name_en?: T;
+  name_ko?: T;
+  name_cn?: T;
+  name_tw?: T;
+  slug?: T;
+  category?: T;
+  shop?: T;
+  attractions?: T;
+  description?: T;
+  description_en?: T;
+  description_ko?: T;
+  description_cn?: T;
+  description_tw?: T;
+  type?: T;
+  type_en?: T;
+  type_ko?: T;
+  type_cn?: T;
+  type_tw?: T;
+  release_date?: T;
+  release_date_en?: T;
+  release_date_ko?: T;
+  release_date_cn?: T;
+  release_date_tw?: T;
+  price_ex_tax?: T;
+  price_in_tax?: T;
+  main_image_url?: T;
+  image_url_1?: T;
+  image_url_2?: T;
+  image_url_3?: T;
+  image_url_4?: T;
+  image_url_5?: T;
+  image_url_6?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "goods-categories_select".
+ */
+export interface GoodsCategoriesSelect<T extends boolean = true> {
+  id?: T;
+  category?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "shops_select".
+ */
+export interface ShopsSelect<T extends boolean = true> {
+  name_kana?: T;
+  name?: T;
+  is_disabled?: T;
+  slug?: T;
+  area?: T;
+  tagline?: T;
+  tagline_en?: T;
+  tagline_ko?: T;
+  tagline_cn?: T;
+  tagline_tw?: T;
+  description?: T;
+  description_en?: T;
+  description_ko?: T;
+  description_cn?: T;
+  description_tw?: T;
+  image_url?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "areas_select".
+ */
+export interface AreasSelect<T extends boolean = true> {
+  name?: T;
+  slug?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "partners_select".
+ */
+export interface PartnersSelect<T extends boolean = true> {
+  name?: T;
+  name_en?: T;
+  name_ko?: T;
+  name_cn?: T;
+  name_tw?: T;
+  description?: T;
+  description_en?: T;
+  description_ko?: T;
+  description_cn?: T;
+  description_tw?: T;
+  url?: T;
+  image_url?: T;
+  is_disabled?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "hotels_select".
+ */
+export interface HotelsSelect<T extends boolean = true> {
+  name?: T;
+  name_en?: T;
+  name_ko?: T;
+  name_cn?: T;
+  name_tw?: T;
+  description?: T;
+  description_en?: T;
+  description_ko?: T;
+  description_cn?: T;
+  description_tw?: T;
+  url?: T;
+  url_en?: T;
+  url_ko?: T;
+  url_cn?: T;
+  url_tw?: T;
+  image_url?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "translations_select".
+ */
+export interface TranslationsSelect<T extends boolean = true> {
+  is_disabled?: T;
+  path?: T;
+  key?: T;
+  ja?: T;
+  en?: T;
+  ko?: T;
+  cn?: T;
+  tw?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "park-service-guide_select".
+ */
+export interface ParkServiceGuideSelect<T extends boolean = true> {
+  is_disabled?: T;
+  category?: T;
+  category_id?: T;
+  title?: T;
+  title_en?: T;
+  title_ko?: T;
+  title_cn?: T;
+  title_tw?: T;
+  title_id?: T;
+  subtitle?: T;
+  subtitle_en?: T;
+  subtitle_ko?: T;
+  subtitle_cn?: T;
+  subtitle_tw?: T;
+  body?: T;
+  body_en?: T;
+  body_ko?: T;
+  body_cn?: T;
+  body_tw?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "spa-service-guide_select".
+ */
+export interface SpaServiceGuideSelect<T extends boolean = true> {
+  is_disabled?: T;
+  category?: T;
+  category_id?: T;
+  title?: T;
+  title_en?: T;
+  title_ko?: T;
+  title_cn?: T;
+  title_tw?: T;
+  title_id?: T;
+  subtitle?: T;
+  subtitle_en?: T;
+  subtitle_ko?: T;
+  subtitle_cn?: T;
+  subtitle_tw?: T;
+  body?: T;
+  body_en?: T;
+  body_ko?: T;
+  body_cn?: T;
+  body_tw?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "topics_select".
+ */
+export interface TopicsSelect<T extends boolean = true> {
+  is_disabled?: T;
+  title?: T;
+  title_en?: T;
+  title_ko?: T;
+  title_cn?: T;
+  title_tw?: T;
+  note?: T;
+  note_en?: T;
+  note_ko?: T;
+  note_cn?: T;
+  note_tw?: T;
+  url?: T;
+  url_en?: T;
+  url_ko?: T;
+  url_cn?: T;
+  url_tw?: T;
+  image_url?: T;
+  image_url_en?: T;
+  image_url_ko?: T;
+  image_url_cn?: T;
+  image_url_tw?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "important-news_select".
+ */
+export interface ImportantNewsSelect<T extends boolean = true> {
+  title?: T;
+  title_en?: T;
+  title_ko?: T;
+  title_cn?: T;
+  title_tw?: T;
+  url?: T;
+  url_en?: T;
+  url_ko?: T;
+  url_cn?: T;
+  url_tw?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ota-banners_select".
+ */
+export interface OtaBannersSelect<T extends boolean = true> {
+  is_disabled?: T;
+  language?: T;
+  url?: T;
+  image_url?: T;
+  image_alt?: T;
+  event?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "access-ota-banners_select".
+ */
+export interface AccessOtaBannersSelect<T extends boolean = true> {
+  is_disabled?: T;
+  language?: T;
+  url?: T;
+  image_url?: T;
+  image_alt?: T;
+  event?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ticket-notes_select".
+ */
+export interface TicketNotesSelect<T extends boolean = true> {
+  is_disabled_ticket?: T;
+  is_disabled_spa?: T;
+  is_disabled_resident?: T;
+  text?: T;
+  text_en?: T;
+  text_ko?: T;
+  text_cn?: T;
+  text_tw?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "premium-pass-notes_select".
+ */
+export interface PremiumPassNotesSelect<T extends boolean = true> {
+  is_disabled?: T;
+  text?: T;
+  text_en?: T;
+  text_ko?: T;
+  text_cn?: T;
+  text_tw?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ticket-notes-1day_select".
+ */
+export interface TicketNotes1DaySelect<T extends boolean = true> {
+  is_disabled?: T;
+  type?: T;
+  type_name?: T;
+  text?: T;
+  text_en?: T;
+  text_ko?: T;
+  text_cn?: T;
+  text_tw?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ticket-notes-afternoon_select".
+ */
+export interface TicketNotesAfternoonSelect<T extends boolean = true> {
+  is_disabled?: T;
+  type?: T;
+  type_name?: T;
+  text?: T;
+  text_en?: T;
+  text_ko?: T;
+  text_cn?: T;
+  text_tw?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ticket-notes-afternoon-set_select".
+ */
+export interface TicketNotesAfternoonSetSelect<T extends boolean = true> {
+  is_disabled?: T;
+  type?: T;
+  type_name?: T;
+  text?: T;
+  text_en?: T;
+  text_ko?: T;
+  text_cn?: T;
+  text_tw?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ticket-notes-afternoon-plus_select".
+ */
+export interface TicketNotesAfternoonPlusSelect<T extends boolean = true> {
+  is_disabled?: T;
+  type?: T;
+  type_name?: T;
+  text?: T;
+  text_en?: T;
+  text_ko?: T;
+  text_cn?: T;
+  text_tw?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ticket-notes-spa_select".
+ */
+export interface TicketNotesSpaSelect<T extends boolean = true> {
+  is_disabled?: T;
+  type?: T;
+  type_name?: T;
+  text?: T;
+  text_en?: T;
+  text_ko?: T;
+  text_cn?: T;
+  text_tw?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ticket-notes-premium-pass_select".
+ */
+export interface TicketNotesPremiumPassSelect<T extends boolean = true> {
+  is_disabled?: T;
+  type?: T;
+  type_name?: T;
+  text?: T;
+  text_en?: T;
+  text_ko?: T;
+  text_cn?: T;
+  text_tw?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ticket-notes-park-spa-1day_select".
+ */
+export interface TicketNotesParkSpa1DaySelect<T extends boolean = true> {
+  is_disabled?: T;
+  type?: T;
+  type_name?: T;
+  text?: T;
+  text_en?: T;
+  text_ko?: T;
+  text_cn?: T;
+  text_tw?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ticket-notes-okinawa-resident_select".
+ */
+export interface TicketNotesOkinawaResidentSelect<T extends boolean = true> {
+  is_disabled?: T;
+  type?: T;
+  type_name?: T;
+  text?: T;
+  text_en?: T;
+  text_ko?: T;
+  text_cn?: T;
+  text_tw?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ticket-notes-okinawa-kids-free_select".
+ */
+export interface TicketNotesOkinawaKidsFreeSelect<T extends boolean = true> {
+  is_disabled?: T;
+  type?: T;
+  type_name?: T;
+  text?: T;
+  text_en?: T;
+  text_ko?: T;
+  text_cn?: T;
+  text_tw?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "ticket-notes-spa-guide_select".
+ */
+export interface TicketNotesSpaGuideSelect<T extends boolean = true> {
+  is_disabled?: T;
+  type?: T;
+  type_name?: T;
+  text?: T;
+  text_en?: T;
+  text_ko?: T;
+  text_cn?: T;
+  text_tw?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "comfort-navi-photo-list_select".
+ */
+export interface ComfortNaviPhotoListSelect<T extends boolean = true> {
+  is_disabled?: T;
+  url?: T;
+  image_url?: T;
+  image_alt?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "tickets_select".
+ */
+export interface TicketsSelect<T extends boolean = true> {
+  is_disabled?: T;
+  id?: T;
+  price_ex_tax?: T;
+  price_ex_tax_en?: T;
+  price_ex_tax_ko?: T;
+  price_ex_tax_cn?: T;
+  price_ex_tax_tw?: T;
+  price_inc_tax?: T;
+  price_inc_tax_en?: T;
+  price_inc_tax_ko?: T;
+  price_inc_tax_cn?: T;
+  price_inc_tax_tw?: T;
+  name?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "premium-pass_select".
+ */
+export interface PremiumPassSelect<T extends boolean = true> {
+  id?: T;
+  price_ex_tax?: T;
+  price_inc_tax?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "premium-pass-list_select".
+ */
+export interface PremiumPassListSelect<T extends boolean = true> {
+  attractions?: T;
+  price?: T;
+  image_url?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "jtb-banner_select".
+ */
+export interface JtbBannerSelect<T extends boolean = true> {
+  is_disabled?: T;
+  text?: T;
+  url?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "parking-status_select".
+ */
+export interface ParkingStatusSelect<T extends boolean = true> {
+  is_disabled?: T;
+  id_disabled?: T;
+  name?: T;
+  name_en?: T;
+  name_ko?: T;
+  name_cn?: T;
+  name_tw?: T;
+  name_description_text?: T;
+  name_description_text_en?: T;
+  name_description_text_ko?: T;
+  name_description_text_cn?: T;
+  name_description_text_tw?: T;
+  id?: T;
+  api_id?: T;
+  api_area_id?: T;
+  reservation_url?: T;
+  price?: T;
+  price_en?: T;
+  price_ko?: T;
+  price_cn?: T;
+  price_tw?: T;
+  price_label_free?: T;
+  price_label_paid?: T;
+  price_label_reserve?: T;
+  time_to_park_min?: T;
+  note?: T;
+  note_en?: T;
+  note_ko?: T;
+  note_cn?: T;
+  note_tw?: T;
+  address?: T;
+  address_en?: T;
+  address_ko?: T;
+  address_cn?: T;
+  address_tw?: T;
+  start_time?: T;
+  end_time?: T;
+  map_url?: T;
+  map_url_sc?: T;
+  map_pin_bubble_side?: T;
+  iframe_map_url?: T;
+  map_coords_mobile?: T;
+  map_coords?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "experience-agreement_select".
+ */
+export interface ExperienceAgreementSelect<T extends boolean = true> {
+  is_disabled?: T;
+  name?: T;
+  id?: T;
+  attraction_slug?: T;
+  title?: T;
+  title_en?: T;
+  title_ko?: T;
+  title_cn?: T;
+  title_tw?: T;
+  body?: T;
+  body_en?: T;
+  body_ko?: T;
+  body_cn?: T;
+  body_tw?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "reservation-pass_select".
+ */
+export interface ReservationPassSelect<T extends boolean = true> {
+  is_disabled?: T;
+  id?: T;
+  text?: T;
+  text_en?: T;
+  text_ko?: T;
+  text_cn?: T;
+  text_tw?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "timetable-tabs_select".
+ */
+export interface TimetableTabsSelect<T extends boolean = true> {
+  is_disabled?: T;
+  tab_id?: T;
+  route_id?: T;
+  is_show_anchor_links?: T;
+  tab_title?: T;
+  tab_title_en?: T;
+  tab_title_ko?: T;
+  tab_title_cn?: T;
+  tab_title_tw?: T;
+  reservation_notes?: T;
+  reservation_notes_en?: T;
+  reservation_notes_ko?: T;
+  reservation_notes_cn?: T;
+  reservation_notes_tw?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "timetable-tables_select".
+ */
+export interface TimetableTablesSelect<T extends boolean = true> {
+  is_disabled?: T;
+  table_name?: T;
+  table_id?: T;
+  tab_id?: T;
+  table_title_id?: T;
+  table_title?: T;
+  table_title_en?: T;
+  table_title_ko?: T;
+  table_title_cn?: T;
+  table_title_tw?: T;
+  table_header_1?: T;
+  table_header_1_en?: T;
+  table_header_1_ko?: T;
+  table_header_1_cn?: T;
+  table_header_1_tw?: T;
+  table_header_1_use_space?: T;
+  table_header_2?: T;
+  table_header_2_en?: T;
+  table_header_2_ko?: T;
+  table_header_2_cn?: T;
+  table_header_2_tw?: T;
+  table_header_2_use_space?: T;
+  table_header_3?: T;
+  table_header_3_en?: T;
+  table_header_3_ko?: T;
+  table_header_3_cn?: T;
+  table_header_3_tw?: T;
+  table_header_3_use_space?: T;
+  table_note?: T;
+  table_note_en?: T;
+  table_note_ko?: T;
+  table_note_cn?: T;
+  table_note_tw?: T;
+  table_note_is_red?: T;
+  table_note_is_ordered?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "timetable-times_select".
+ */
+export interface TimetableTimesSelect<T extends boolean = true> {
+  is_disabled?: T;
+  time_name?: T;
+  table_id?: T;
+  row_index?: T;
+  col1_value?: T;
+  col2_value?: T;
+  col3_value?: T;
+  col_is_red?: T;
+  col_symbols?: T;
+  updatedAt?: T;
+  createdAt?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema

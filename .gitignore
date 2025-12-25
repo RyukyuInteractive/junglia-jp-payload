@@ -52,3 +52,7 @@ node_modules/
 # OpenNext
 .open-next
 .wrangler
+
+# from-json-cms generated data
+from-json-cms/data.json
+from-json-cms/seed.sql
